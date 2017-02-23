@@ -1,0 +1,336 @@
+/*
+  Bem-Vindo ao CSS da SinapZ.
+*/
+
+/** Instruções de código **/
+
+/** 1 - Definições Gerais **/
+/** 2 - Header **/
+/** 3 - Primeira Sessão **/
+/** 4 - Segunda Sessão **/
+/** 5 - Terceira Sessão **/
+/** 6 - Quarta Sessão **/
+/** 7 - Quinta Sessão **/
+/** 8 - Sexta Sessão **/
+/** 9 - Setima Sessão **/
+/** 10 - Footer **/
+/** 11 - Responsividade **/
+
+
+
+/** 1 - Definições Gerais **/
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+
+body{
+    font-family: 'Nunito', serif;
+}
+.clear{
+    clear: both;
+}
+.box{
+    font-size: 20px;
+    line-height: 150%;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    background: rgba(71,49,131, .7);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+.alturaTotal{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+.box h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.sessoes{
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+}
+.sessoes img{
+    width: 320px;
+    height: 240px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(240,230,220, .7);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+/** FIM - Definições Gerais **/
+
+
+
+/** 2 - Header **/
+header{
+    background-color: #473183;
+    background-image: url("../img/sinapz_chamada.png");
+    min-height: 314px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.formulario{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    right: -500px;
+    top: 0px;
+    min-height: 100vh;
+    background-color: rgba(59, 161, 244, 0.7);
+    color: #fff;
+    z-index: 999;
+    transition: 0.5s;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+#ativarNav:checked ~ .formulario {
+    visibility: visible;
+    opacity: 1;
+    right: 0px;
+    width: 500px;
+    transition: 0.5s;
+}
+header input{
+    display: none;
+}
+header label{
+    color: #fff !important;
+    font-size: 15px;
+    position: fixed;
+    right: 15px;
+    z-index: 99999;
+    top: 15px;
+    background-color: #222;
+    padding: 15px;
+    transition: all 0.3s ease-out;
+}
+header label:hover{
+    cursor: pointer;
+    background-color: #3ba1f4;
+    transition: all 0.3s ease-out;
+}
+/** FIM - Header **/
+
+
+
+/** 3 - Primeira Sessão **/
+#sessaoUm{
+    background-image: url("../imagens/pexels-photo-26393.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+}
+#sessaoUm h1{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 2px 2px #000;
+    font-size: 70px;
+    padding-top: 30px;    
+}
+/** FIM - Primeira Sessão **/
+
+
+
+/** 4 - Segunda Sessão **/
+#sessaoDois{
+    background-image: url("../imagens/pexels-photo-289742.jpeg");
+}
+#sessaoDois img{
+    transform: translateZ(3.25px) scale(1.50) translateX(50%) translateY(0%) rotate(2deg);
+}
+/** FIM - Segunda Sessão **/
+
+
+
+/** 5 - Terceira Sessão **/
+#sessaoTres{
+    background-image: url("../imagens/pencil-education-pencil-sharpener-art-159731.jpeg");
+}
+#sessaoTres img{
+    transform: translateZ(3.25px) scale(1.50) translateX(-10%) translateY(0%) rotate(2deg);
+}
+/** FIM - Terceira Sessão **/
+
+
+
+/** 6 - Quarta Sessão **/
+#sessaoQuatro{
+    background-image: -webkit-linear-gradient(left, #2E75C4 0, #4A328F 100%);
+    background-image: -o-linear-gradient(left, #2E75C4 0, #4A328F 100%);
+    background-image: linear-gradient(to right, #2E75C4 0, #4A328F 100%);
+}
+#sessaoQuatro img{
+    transform: translateZ(3.25px) scale(1.50) translateX(50%) translateY(0%) rotate(2deg);
+}
+#sessaoQuatro .box{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/** FIM - Quarta Sessão **/
+
+
+
+/** 7 - Quinta Sessão **/
+#sessaoCinco{
+    background-image: url("../imagens/library-la-trobe-study-students-159775.jpeg");
+}
+#sessaoCinco img{
+    transform: translateZ(3.25px) scale(1.50) translateX(-10%) translateY(0%) rotate(2deg);
+}
+/** FIM - Quinta Sessão **/
+
+
+
+/** 8 - Sexta Sessão **/
+#sessaoSeis{
+    background-image: url("../imagens/apple-desk-laptop-working.jpg");
+}
+#sessaoSeis .box{
+    transform: translateZ(3.25px) translateX(-25%) translateY(0%) rotate(2deg);
+    padding: 21px;
+    box-shadow: none;
+    border-radius: 0;
+}
+#sessaoSeis .box:after{
+    content: '';
+    height: 10px;
+    position: absolute;
+    right: -99px;
+    z-index: 9999;
+    top: 0px;
+    width: 99px;
+    border-top: 120px solid transparent;
+    border-bottom: 120px solid transparent;
+    border-left: 90px solid;
+    border-right: transparent;
+    border-left-color: rgba(71,49,131, .7);
+}
+#sessaoSeis .funkyradio input[type="radio"]:empty ~ label, .funkyradio input[type="checkbox"]:empty ~ label{
+    height: 50px;
+    line-height: 3.5em;
+    color: #000;
+}
+/** FIM - Sexta Sessão **/
+
+
+
+/** 9 - Setima Sessão **/
+#sessaoSete{
+    background-image: url("../imagens/red-school-blur-factory.jpg");
+}
+#sessaoSete .box{
+    text-align: center;
+    padding: 40px;
+}
+/** FIM - Setima Sessão **/
+
+
+
+/** 10 - Footer **/
+
+footer {
+    text-align: center;
+    opacity: .8;
+    padding: 10px;
+    background-image: -webkit-linear-gradient(left, #2E75C4 0, #4A328F 100%);
+    background-image: -o-linear-gradient(left, #2E75C4 0, #4A328F 100%);
+    background-image: linear-gradient(to right, #2E75C4 0, #4A328F 100%);
+    background-repeat: repeat-x;
+}
+
+/** FIM - Footer **/
+
+
+
+/** 11 - Responsividade **/
+@media (max-width: 1200px){
+    #sessaoSeis .box:after{
+        display: none;
+    }
+    #sessaoSeis .box{
+        box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+        border-radius: 5px;
+        transform: translateZ(3.25px) translateX(-10%) translateY(0%) rotate(2deg);
+    }
+    .sessoes img{
+        margin: auto;
+        transform: scale(1.1) rotate(2deg) !important;
+    }
+    #sessaoUm h1{
+        font-size: 60px;
+    }
+    .box h2{
+        font-size: 35px;
+    }
+}
+@media (max-width: 991px){
+    .alturaTotal{
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+    #sessaoSeis .box{
+        transform: translateX(0%);
+    }
+    .sessoes .col-sm-12{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
+    }
+}
+@media (max-width: 767px){
+    header{
+        background-size: 500px;
+    }
+    #sessaoUm h1{
+        font-size: 36px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    #sessaoUm{
+        display: flex;
+        align-items: center;
+        min-height: 60vh;
+    }
+    .sessoes{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        min-height: auto;
+    }
+    #sessaoSeis .funkyradio input[type="radio"]:empty ~ label, .funkyradio input[type="checkbox"]:empty ~ label {
+        line-height: 4.5em;
+        font-size: 12px;
+    }
+    .box{
+        font-size: 15px;
+    }
+    .box h2{
+        font-size: 24px;
+    }
+    .sessoes img{
+        transform: scale(1) rotate(2deg) !important;
+    }
+    #ativarNav:checked ~ .formulario {
+        width: 100%;
+    }
+    #sessaoSete .box{
+        padding: 20px;
+    }
+    #sessaoSete .alturaTotal{
+        min-height: auto;
+    }
+}
+/** FIM - Responsividade **/
